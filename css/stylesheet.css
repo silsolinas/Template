@@ -128,10 +128,7 @@ p{
     margin:0;
 }
 
-.btn-primary{
-    margin-top:3%;
-    padding: 3%;
-}
+
 
 @media (max-width: 575.98px){
     .pittogramma{
@@ -155,4 +152,12 @@ p{
 }
 hr{
     margin-top: 0;
+}
+.btn-primary-bot{
+    margin-top:3%;
+    padding: 3%;
+}
+/*Pagina prodotto*/
+li{
+    font-size: larger;
 }
