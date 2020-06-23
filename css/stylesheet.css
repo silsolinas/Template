@@ -1,8 +1,12 @@
 body{
     font-family: Arial;
 }
-h5{
+h5, h2{
     font-weight: bold;
+}
+
+p{
+    font-size: larger;
 }
 .navbar-custom { 
     background-color: rgb(214, 21, 36); 
@@ -15,10 +19,12 @@ h5{
     background-color: rgb(170, 170, 170);
     padding:2%
 }
+.color-bot{
+    background-color: rgb(242, 242, 242);
+}
 .textlink{
     font-weight: bold;
     color:rgb(214, 21, 36);
-    font-size: 77%;
     font-weight: bold;
 }
 .basictext{
@@ -101,7 +107,6 @@ h5{
     padding: 3%;
   }
 .text-block-bot{
-    background-color: rgb(242, 242, 242);
     color: black;
     padding: 1%;
 }
@@ -125,10 +130,23 @@ h5{
 
 .btn-primary{
     margin-top:3%;
+    padding: 3%;
 }
 
 @media (max-width: 575.98px){
     .pittogramma{
         display:none;
     }
+}
+
+/*Lista prodotti*/
+.breadcrumb{
+    background-color: white;
+}
+
+.btn-center{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }

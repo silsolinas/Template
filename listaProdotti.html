@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" defer>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer></script>
+    
+    <title>Prodotti</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- NAVBAR PRINCIPALE -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+  
+            <a class="navbar-brand" href="#">
+                <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
+            </a>
+
+            <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navbarSearch">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button class="navbar-toggler hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSearch">
+                <form class="navbar-form pl-2 search-center" id="navBarSearchForm">
+                    <div class="form-group">
+                        <input class="form-control " type="search" placeholder="Cosa stai cercando?" aria-label="Search">
+                    </div>
+                </form>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item border-right pl-2">
+                        <a class="text-white pr-2" href="#">Contatti</a>
+                    </li>
+                    <li class="nav-item pr-5">
+                        <a class="text-white pl-2" href="#">Novità</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- NAVBAR GRIGIA -->
+        <nav class="navbar navbar-expand-lg navbar-dark color-g1" >
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ml-sm-auto mr-sm-auto pb-2">
+                <li class="nav-item px-4">
+                  <a class="textlink" href="#">E-Desk</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="textlink" href="#">Preparati all'export</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="textlink" href="#">Porta il business all'estero</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="textlink" href="#">Amplifica e proteggi il tuo business</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb ">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Preparati all'export</li>
+          <li class="breadcrumb-item active" aria-current="page">Impara ad esportare</li>
+        </ol>
+    </nav>
+
+    <!-- DESCRIZIONE PAGINA -->
+    <div>
+        <div class="row">
+            <div class="col text-center pb-3">
+                <h2>Impara ad esportare</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Dopo aver capito se la tua azienda è pronta ad esportare, il passo successivo è imparare come si fa. L'offerta formativa è molto ampia e adatta ad ogni tipo di realtà aziendale:
+                    webinar,incontri,formazione personalizzata sono solo alcune delle possiblità di formazione tra le quali puoi scegliere
+                    per acquisire il giusto know-how e prepararti all'internazionalizzazione della tua impresa. Devi solo scegliere la soluzione giusta per te.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ELENCO CARDS -->
+    <div class="color-bot">
+        <row class="text-center pt-4">
+            <p style="font-weight: bold;">Abbiamo 6 soluzioni per te</p>
+        </row>
+        <!-- PRIMA RIGA CARDS -->
+        <div class="row">
+            <div class="col-sm pb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-center">Servizi formativi gratuiti</h5>
+                      <p class="card-text text-center">Corsi, seminari, webinar e altri servizi formativi gratuiti.</p>
+                      <a href="#" class="btn btn-primary btn-center mt-auto">Maggiori informazioni</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-center">Formazione su misura</h5>
+                      <p class="card-text text-center">Interventi formativi personalizzati per enti, Regioni,
+                          associazioni imprenditoriali e artigiane, gruppi di imprese e giovani
+                      </p>
+                      <a href="#" class="btn btn-primary btn-center mt-auto">Maggiori informazioni</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-center">Education to Export</h5>
+                      <p class="card-text text-center">Un programma di formazione gratuita per le PMI, con percorsi online
+                          e formazione in aula
+                      </p>
+                      <a href="#" class="btn btn-primary text-center btn-center mt-auto">Maggiori informazioni</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECONDA RIGA CARDS -->
+        <div class="row">
+            <div class="col-sm pb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-center">T2M Train to Markets</h5>
+                      <p class="card-text text-center">Piattaforma di e-learning gratuita dedicata alle aziende italiane, con corsi
+                          e webinar.
+                      </p>
+                      <a href="#" class="btn btn-primary btn-center mt-auto">Maggiori informazioni</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-center">TEM Digital Exports Manager</h5>
+                      <p class="card-text text-center">Percorsi formativi per diventare Temporary Export Manager, gli esperti
+                          di internazionalizzazione d'impresa
+                      </p>
+                      <a href="#" class="btn btn-primary btn-center mt-auto">Maggiori informazioni</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-center">Glossario dell'export</h5>
+                      <p class="card-text text-center">L'ABC dell'export, alla portata di tutti</p>
+                      <a href="#" class="btn btn-primary btn-center mt-auto">Maggiori informazioni</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LINEA ROSSA -->
+    <hr class="bg-danger" style="border: 1px solid red"> 
+    <!-- BLOCCO ASSISTENTE -->
+    <div class="text-center">
+        <div class="row border text-block-bot text-center color-bot" style="width: fit-content; border-radius: 20px;">
+            <div class="col-sm-auto"> 
+                <h5 class="text-center">Hai bisogno di aiuto?</h5>
+                <button type="button" class="btn btn-primary">Prova il nostro assistente virtuale</button>
+            </div>
+            <div class="col-sm d-flex text-center">    
+                <img src="https://static.thenounproject.com/png/1155091-200.png"style="width:70px;" class="pittogramma" >
+            </div>
+        </div>
+    </div>
+     <!-- FOOTER -->
+    <footer class="page-footer font-small color-g1" style="margin-top: 3%;">
+        <div class="row">
+            <div class="col-sm text-left">
+                <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
+                <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
+            </div>
+            <div class="text-right text-center">
+                <ul class="navbar nav footertext">
+                    <li class="nav-item "><a class="pr-2 ablack" href="#">Domande frequenti</a></li>
+                    <li class="nav-item "><a class="pr-2 ablack" href="#">Contatti</a></li>
+                    <li class="nav-item "><a class="pr-2 ablack" href="#">Mappa del sito</a></li>
+                    <li class="nav-item "><a class="pr-2 ablack" href="#">Cookies</a></li>
+                    <li class="nav-item "><a class="pr-2 ablack" href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
