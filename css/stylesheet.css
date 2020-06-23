@@ -25,7 +25,6 @@ p{
 .textlink{
     font-weight: bold;
     color:rgb(214, 21, 36);
-    font-weight: bold;
 }
 .basictext{
     font-size:71.7%;
@@ -128,8 +127,6 @@ p{
     margin:0;
 }
 
-
-
 @media (max-width: 575.98px){
     .pittogramma{
         display:none;
@@ -158,6 +155,20 @@ hr{
     padding: 3%;
 }
 /*Pagina prodotto*/
-li{
-    font-size: larger;
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #404040;
+  }
+.logo{
+    width:120px;
+    height: 40px;
+    padding:1%;
 }
