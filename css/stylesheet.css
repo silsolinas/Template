@@ -1,8 +1,16 @@
 body{
     font-family: Arial;
 }
+<<<<<<< HEAD
 h5,h2{
+=======
+h5, h2{
+>>>>>>> feature/listaProdotti
     font-weight: bold;
+}
+
+p{
+    font-size: larger;
 }
 .navbar-custom { 
     background-color: rgb(214, 21, 36); 
@@ -14,6 +22,9 @@ h5,h2{
 .color-g2{
     background-color: rgb(170, 170, 170);
     padding:2%
+}
+.color-bot{
+    background-color: rgb(242, 242, 242);
 }
 .textlink{
     font-weight: bold;
@@ -100,7 +111,6 @@ h5,h2{
     padding: 3%;
   }
 .text-block-bot{
-    background-color: rgb(242, 242, 242);
     color: black;
     padding: 1%;
 }
@@ -124,6 +134,7 @@ h5,h2{
 
 .btn-primary{
     margin-top:3%;
+    padding: 3%;
 }
 
 @media (max-width: 575.98px){
@@ -132,4 +143,24 @@ h5,h2{
     }
 }
 
+<<<<<<< HEAD
 /*Pagina prodotto*/
+=======
+/*Lista prodotti*/
+.breadcrumb{
+    background-color: white;
+}
+
+.btn-center{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.container-padding{
+    padding: 0% 5% 5% 5%;
+}
+hr{
+    margin-top: 0;
+}
+>>>>>>> feature/listaProdotti
