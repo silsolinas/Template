@@ -1,6 +1,7 @@
 body{
     font-family: Arial;
 }
+
 h5, h2{
     font-weight: bold;
 }
@@ -132,6 +133,9 @@ p{
         display:none;
     }
 }
+
+
+/*Pagina prodotto*/
 
 /*Lista prodotti*/
 .breadcrumb{
