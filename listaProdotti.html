@@ -14,7 +14,7 @@
     <title>Prodotti</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container px-0">
         <!-- NAVBAR PRINCIPALE -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
   
@@ -67,15 +67,16 @@
               </ul>
             </div>
         </nav>
+        <!-- BREADCRUMB -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb ">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Preparati all'export</li>
+                <li class="breadcrumb-item active" aria-current="page">Impara ad esportare</li>
+            </ol>
+        </nav>
     </div>
-    <!-- BREADCRUMB -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb ">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Preparati all'export</li>
-          <li class="breadcrumb-item active" aria-current="page">Impara ad esportare</li>
-        </ol>
-    </nav>
+    
 
     <!-- DESCRIZIONE PAGINA -->
     <div class="container">
@@ -97,7 +98,7 @@
     </div>
 
     <!-- ELENCO CARDS -->
-    <div class="container container-padding color-bot">
+    <div class="container container-padding color-bot border-bottom border-danger">
         <row class="text-center pt-4">
             <p style="font-weight: bold;">Abbiamo 6 soluzioni per te</p>
         </row>
@@ -172,36 +173,38 @@
     </div>
 
     <!-- LINEA ROSSA -->
-    <hr class="bg-danger" style="border: 1px solid red"> 
+    <!-- <hr class="bg-danger" style="border: 1px solid red">  -->
     <!-- BLOCCO ASSISTENTE -->
-    <div class="text-center">
-        <div class="row border text-block-bot text-center color-bot" style="width: fit-content; border-radius: 20px;">
-            <div class="col-sm-auto"> 
-                <h5 class="text-center">Hai bisogno di aiuto?</h5>
-                <button type="button" class="btn btn-primary">Prova il nostro assistente virtuale</button>
-            </div>
-            <div class="col-sm d-flex text-center">    
-                <img src="https://static.thenounproject.com/png/1155091-200.png"style="width:70px;" class="pittogramma" >
+    <div class="container pt-3">
+        <div class="text-center">
+            <div class="row border text-block-bot text-center color-bot" style="width: fit-content; border-radius: 20px;">
+                <div class="col-sm-auto"> 
+                    <h5 class="text-center">Hai bisogno di aiuto?</h5>
+                    <button type="button" class="btn btn-primary">Prova il nostro assistente virtuale</button>
+                </div>
+                <div class="col-sm d-flex text-center">    
+                    <img src="https://static.thenounproject.com/png/1155091-200.png"style="width:70px;" class="pittogramma" >
+                </div>
             </div>
         </div>
+        <!-- FOOTER -->
+        <footer class="page-footer font-small color-g1 px-0" style="margin-top: 3%;">
+            <div class="row">
+                <div class="col-sm text-left">
+                    <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
+                    <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
+                </div>
+                <div class="text-right text-center">
+                    <ul class="navbar nav footertext">
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Domande frequenti</a></li>
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Contatti</a></li>
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Mappa del sito</a></li>
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Cookies</a></li>
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
-     <!-- FOOTER -->
-    <footer class="page-footer font-small color-g1" style="margin-top: 3%;">
-        <div class="row">
-            <div class="col-sm text-left">
-                <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
-                <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
-            </div>
-            <div class="text-right text-center">
-                <ul class="navbar nav footertext">
-                    <li class="nav-item "><a class="pr-2 ablack" href="#">Domande frequenti</a></li>
-                    <li class="nav-item "><a class="pr-2 ablack" href="#">Contatti</a></li>
-                    <li class="nav-item "><a class="pr-2 ablack" href="#">Mappa del sito</a></li>
-                    <li class="nav-item "><a class="pr-2 ablack" href="#">Cookies</a></li>
-                    <li class="nav-item "><a class="pr-2 ablack" href="#">Privacy policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
