@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+        defer>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
+        defer></script>
+
+    <title>Prodotti</title>
+</head>
+
+<body>
+    <div class="container px-0">
+        <!-- NAVBAR PRINCIPALE -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+
+            <a class="navbar-brand" href="#">
+                <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
+            </a>
+
+            <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" data-toggle="collapse"
+                data-target="#navbarSearch">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button class="navbar-toggler hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSearch">
+                <form class="navbar-form pl-2 search-center" id="navBarSearchForm">
+                    <div class="form-group">
+                        <input class="form-control " type="search" placeholder="Cosa stai cercando?"
+                            aria-label="Search">
+                    </div>
+                </form>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item border-right pl-2">
+                        <a class="text-white pr-2" href="#">Contatti</a>
+                    </li>
+                    <li class="nav-item pr-5">
+                        <a class="text-white pl-2" href="#">Novità</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- NAVBAR GRIGIA -->
+        <nav class="navbar navbar-expand-sm navbar-dark color-g1">
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-sm-auto mr-sm-auto pb-2">
+                    <li class="nav-item px-4">
+                        <a class="textlink" href="#">E-Desk</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="textlink" href="#">Preparati all'export</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="textlink" href="#">Porta il business all'estero</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="textlink" href="#">Amplifica e proteggi il tuo business</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- BREADCRUMB -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb ">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Preparati all'export</li>
+                <li class="breadcrumb-item active">Impara ad esportare</li>
+                <li class="breadcrumb-item active" aria-current="page">Education to export</li>
+            </ol>
+        </nav>
+
+        <!-- DESCRIZIONE PAGINA -->
+        <div>
+            <div class="border box-index">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedaProdotto.html#inbreve">In breve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedaProdotto.html#achi">A chi è rivolto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedaProdotto.html#come">Come accedere al servizio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="schedaProdotto.html#descrizione">Descrizione</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="schedaProdotto.html#offerto">Offerto da</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Education to Export</h2>
+                </div>
+            </div>
+            <div class="row  text-center">
+                <div class="col pb-4">
+                    <button type="button" class="btn btn-primary">Richiedi il servizio</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SCHEDA PRODOTTO -->
+        <div class="color-bot p-5">
+            <div class="scheda-padd">
+                <div class="row">
+                    <div class="col-sm" id="inbreve">
+                        <h5>In breve</h5>
+                        <p><b>Education to Export</b> è un programma formativo gratuito erogato da SACE,
+                            strutturato in <b>percorsi digitali organizzati in export kit</b> e personalizzati
+                            in base al grado di preparazione all'export dell'impresa, e <b>incontri specialistici sul
+                                territorio e in webinar</b>, tarati sulle reali esigenze aziendali.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" id="achi">
+                        <h5>A chi è rivolto</h5>
+                        <p>Education to Export è dedicato alle <b>PMI di ogni settore e dimensione.</b></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" id="come">
+                        <h5>Come accedere al servizio</h5>
+                        <p>Il programma è gratuito e consultabile in qualsiasi momento. Attraverso una profilazione
+                            iniziale, puoi accedere all'<b>export kit</b> più adatto alle tue esigenze: potrai
+                            facilmente
+                            accrescere le tue competenze e superare gli ostacoli in materia di esportazione.
+                        </p>
+                        <img src="https://cdn.talentsroot.com/upload/root/no_image.png" class="img-fluid pb-4"
+                            alt="logo">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" id="descrizione">
+                        <h5>Descrizione</h5>
+                        <p>Sulla piattaforma dedicata potrai trovare:</p>
+                        <ul style="font-size: larger;">
+                            <li>tool dinamici per esplorare le migliori opportunità per mercato e settore</li>
+                            <li>articoli snapshot</li>
+                            <li>dati,approfondimenti e analisi settoriali</li>
+                            <li>questionari interattivi per avalidare le informazioni acquisite durante il tuo percorso
+                            </li>
+                            <li>esperti SACE SIMEST che rispondono alle domande più frequenti</li>
+                            <li>Video lezioni e podcast sui principali temi dell'export e dell'internazionalizzazione
+                            </li>
+                        </ul>
+                        <p>In più, potrai anchepartecipare a seminari, workshio e webinar organizzati con la
+                            collaborazione
+                            di realtà italiane nel mondo imprenditoriale e istituzionale: occasioni molto importanti per
+                            float-xs-rightnascere nuove opportunità commerciali, favorire il confronto
+                            e recepire il know-how specialistico, fondamentale per costruire una strategia di ingresso
+                            in
+                            nuovi
+                            mercati.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" id="offerto">
+                        <h5>Offerto da</h5>
+                        <img src="logos/sacesimest.png" class="img-fluid logo" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE VERSION -->
+        <div class="border border-black">
+            <div class="box-index2">
+                <ul class="nav flex-column text-center mr-auto ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedaProdotto.html#inbreve">In breve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedaProdotto.html#achi">A chi è rivolto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedaProdotto.html#come">Come accedere al servizio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="schedaProdotto.html#descrizione">Descrizione</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="schedaProdotto.html#offerto">Offerto da</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END MOBILE VERSION -->
+        <div class="row pt-4 text-center">
+            <div class="col-sm text-ceter">
+                <h5>Altri prodotti e servizi consigliati</h5>
+            </div>
+        </div>
+
+
+        <!--Carousel Wrapper-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner p-5">
+                <div class="carousel-item active">
+                    <!--Container delle 4 cards  -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Risk & Export Map</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">T2M Train to Market</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">TEM Digital Export Manager</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fine container delle 4 cards  -->
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3" style="float:left">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- BLOCCO ASSISTENTE -->
+        <div class="pt-3">
+            <!-- LINEA ROSSA -->
+            <hr class="bg-danger" style="border: 1px solid red">
+            <div class="text-center">
+                <div class="row border text-block-bot text-center color-bot"
+                    style="width: fit-content; border-radius: 20px;">
+                    <div class="col-sm-auto">
+                        <h5 class="text-center">Hai bisogno di aiuto?</h5>
+                        <button type="button" class="btn btn-primary btn-primary-bot">Prova il nostro assistente
+                            virtuale</button>
+                    </div>
+                    <div class="col-sm text-center">
+                        <img src="https://static.thenounproject.com/png/1155091-200.png" style="width:70px;"
+                            class="pittogramma">
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <footer class="page-footer font-small color-g1" style="margin-top: 3%;">
+                <div class="row">
+                    <div class="col-sm text-left">
+                        <img src="logos/ita.png" class="img-fluid logo" alt="logo">
+                        <img src="logos/sacesimest.png" class="img-fluid logo" alt="logo">
+                    </div>
+                    <div class="text-right text-center">
+                        <ul class="navbar nav footertext">
+                            <li class="nav-item "><a class="pr-2 ablack" href="#">Domande frequenti</a></li>
+                            <li class="nav-item "><a class="pr-2 ablack" href="#">Contatti</a></li>
+                            <li class="nav-item "><a class="pr-2 ablack" href="#">Mappa del sito</a></li>
+                            <li class="nav-item "><a class="pr-2 ablack" href="#">Cookies</a></li>
+                            <li class="nav-item "><a class="pr-2 ablack" href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

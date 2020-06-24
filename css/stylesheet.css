@@ -3,6 +3,7 @@ body{
 }
 
 h5, h2{
+    font-size:x-large;
     font-weight: bold;
 }
 
@@ -174,3 +175,52 @@ hr{
 .logo{
     height: 50px;
 }
+/*SCHEDA PRODOTTO*/
+.box-index{
+    -webkit-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
+    box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
+    width: fit-content;
+    position: absolute;
+    font-size: smaller;
+    background-color: white;
+    text-align-last: end;
+    font-weight: bold;
+    text-decoration: underline
+}
+.box-index2{
+    width:100%;
+    position: absolute;
+    font-size: smaller;
+    background-color: white;
+    text-align-last: end;
+    font-weight: bold;
+    text-decoration: underline;
+    display:none;
+}
+.scheda-padd{
+    padding: 0% 20% 0 20%
+}
+
+@media (max-width: 992px){
+    .scheda-padd{
+        padding-right:0;
+        padding-left:30%;
+    }
+    .box-index2{
+        display:none;
+    }
+}
+@media (max-width: 767px){
+    .scheda-padd{
+        padding:0;
+
+    }
+    .box-index{
+        display:none;
+    }
+    .box-index2{
+        display:contents;
+    }
+}
+
