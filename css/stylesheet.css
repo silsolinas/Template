@@ -180,13 +180,14 @@ hr{
     -webkit-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
     box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
-    width: fit-content;
+    width: 200px; 
+    margin-left: 2%;
     position: absolute;
     font-size: smaller;
     background-color: white;
     text-align-last: end;
     font-weight: bold;
-    text-decoration: underline
+    text-decoration: underline;
 }
 .box-index2{
     font-size: smaller;
