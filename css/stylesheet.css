@@ -1,15 +1,14 @@
 body{
     font-family: Arial;
 }
-
+p{
+    font-size:larger;
+}
 h5, h2{
     font-size:x-large;
     font-weight: bold;
 }
 
-p{
-    font-size: larger;
-}
 .navbar-custom { 
     background-color: rgb(214, 21, 36); 
 } 
@@ -223,3 +222,44 @@ hr{
     }
 }
 
+/*PAGINA EDITORIALE*/
+.bg-bridge{
+    background-image: url("https://www.hdwallpapers.in/download/akashi_kaikyo_bridge_japan-wide.jpg");
+    background-size: cover;
+}
+.textpage{
+    float: right;
+    padding: 3% 1% 1% 7%;
+    margin: 5% 5% 5% 23%;
+    background: rgba(245, 244, 244, 0.8);
+    color: darkslategray;
+}
+.intro{
+    padding: 1% 5% 0% 23%;
+    margin: 5% 0% 5% 0%;
+    color: darkslategray;
+}
+.box-index-scheda{
+    -webkit-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
+    box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
+    width: 200px;
+    position: absolute;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 15%;
+    margin-left:2%
+}
+ol{
+    margin-block-start:0px;
+    padding-inline-start: 3%;
+}
+@media(max-width: 991px){
+    .box-index-scheda{
+        display: none;
+    }
+    .intro{
+        padding:1% 5% 0% 5%;
+    }
+}

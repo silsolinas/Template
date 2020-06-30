@@ -20,7 +20,22 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
         defer></script>
 
-    <title>Prodotti</title>
+    <script>
+        function myFunction() {
+            $("document").ready(function () {
+                let carouselid = document.querySelector('#carouselExampleIndicators');
+                carouselid.setAttribute('data-ride', 'carousel');
+                carouselid.setAttribute('data-interval', '1000');
+
+                //Mostro indicatori
+                carouselid.querySelector("ol").classList.remove("d-none");
+                carouselid.querySelector(".frecce").classList.remove("d-none");
+
+            });
+        }
+    </script>
+
+    <title>Pagina Editoriale</title>
 </head>
 
 <body>
@@ -29,7 +44,7 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
 
             <a class="navbar-brand" href="#">
-                <img src="http://placehold.it/150x50?text=Logo" class="img-fluid" alt="logo">
+                <img src="logos/esportaitalia.PNG" class="img-fluid" alt="logo">
             </a>
 
             <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" data-toggle="collapse"
@@ -63,7 +78,7 @@
         <!-- NAVBAR GRIGIA -->
         <nav class="navbar navbar-expand-sm navbar-dark color-g1">
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ml-sm-auto mr-sm-auto pb-2" style="font-size: smaller;">
+                <ul class="navbar-nav ml-sm-auto mr-sm-auto pb-2">
                     <li class="nav-item px-4">
                         <a class="textlink" href="#">E-Desk</a>
                     </li>
@@ -83,153 +98,227 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb ">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item">Preparati all'export</li>
-                <li class="breadcrumb-item active">Impara ad esportare</li>
-                <li class="breadcrumb-item active" aria-current="page">Education to export</li>
+                <li class="breadcrumb-item active">Preparati all'export</li>
+                <li class="breadcrumb-item ">Impara ad esportare</li>
+                <li class="breadcrumb-item " aria-current="page">I benefici dell'export</li>
             </ol>
         </nav>
-
         <!-- INDICE PAGINA -->
         <div>
-            <div class="border box-index">
+            <div class="border box-index-scheda order-sm-4">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="schedaProdotto.html#inbreve">In breve</a>
+                        <a class="nav-link" href="paginaEditoriale.html#introd">Introduzione</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="schedaProdotto.html#achi">A chi è rivolto</a>
+                        <a class="nav-link" href="paginaEditoriale.html#pe">Perché esportare?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="schedaProdotto.html#come">Come accedere</a>
+                        <a class="nav-link" href="paginaEditoriale.html#crescita">Crescita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="schedaProdotto.html#descrizione">Descrizione</a>
+                        <a class="nav-link " href="paginaEditoriale.html#comp">Competitività</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="schedaProdotto.html#offerto">Offerto da</a>
+                        <a class="nav-link " href="paginaEditoriale.html#redd">Redditività</a>
                     </li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    <h2>Education to Export</h2>
-                </div>
-            </div>
-            <div class="row  text-center">
-                <div class="col pb-4">
-                    <button type="button" class="btn btn-primary">Richiedi il servizio</button>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- SCHEDA PRODOTTO -->
-        <div class="color-bot p-5">
-            <div class="scheda-padd">
-                <div class="row">
-                    <div class="col-sm" id="inbreve">
-                        <h5>In breve</h5>
-                        <p><b>Education to Export</b> è un programma formativo gratuito erogato da SACE,
-                            strutturato in <b>percorsi digitali organizzati in export kit</b> e personalizzati
-                            in base al grado di preparazione all'export dell'impresa, e <b>incontri specialistici sul
-                                territorio e in webinar</b>, tarati sulle reali esigenze aziendali.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm" id="achi">
-                        <h5>A chi è rivolto</h5>
-                        <p>Education to Export è dedicato alle <b>PMI di ogni settore e dimensione.</b></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm" id="come">
-                        <h5>Come accedere al servizio</h5>
-                        <p>Il programma è gratuito e consultabile in qualsiasi momento. Attraverso una profilazione
-                            iniziale, puoi accedere all'<b>export kit</b> più adatto alle tue esigenze: potrai
-                            facilmente
-                            accrescere le tue competenze e superare gli ostacoli in materia di esportazione.
-                        </p>
-                        <img src="https://cdn.talentsroot.com/upload/root/no_image.png" class="img-fluid pb-4"
-                            alt="logo">
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm" id="descrizione">
-                        <h5>Descrizione</h5>
-                        <p>Sulla piattaforma dedicata potrai trovare:</p>
-                        <ul style="font-size: larger;">
-                            <li>tool dinamici per esplorare le migliori opportunità per mercato e settore</li>
-                            <li>articoli snapshot</li>
-                            <li>dati,approfondimenti e analisi settoriali</li>
-                            <li>questionari interattivi per avalidare le informazioni acquisite durante il tuo percorso
-                            </li>
-                            <li>esperti SACE SIMEST che rispondono alle domande più frequenti</li>
-                            <li>Video lezioni e podcast sui principali temi dell'export e dell'internazionalizzazione
-                            </li>
-                        </ul>
-                        <p>In più, potrai anchepartecipare a seminari, workshio e webinar organizzati con la
-                            collaborazione
-                            di realtà italiane nel mondo imprenditoriale e istituzionale: occasioni molto importanti per
-                            float-xs-rightnascere nuove opportunità commerciali, favorire il confronto
-                            e recepire il know-how specialistico, fondamentale per costruire una strategia di ingresso
-                            in
-                            nuovi
-                            mercati.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm" id="offerto">
-                        <h5>Offerto da</h5>
-                        <img src="logos/sacesimest.png" class="img-fluid logo" alt="logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- MOBILE VERSION -->
-        <div class="border border-black">
-            <div class="box-index2">
-                <ul class="nav flex-column text-center mr-auto ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedaProdotto.html#inbreve">In breve</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="schedaProdotto.html#achi">A chi è rivolto</a>
+                        <a class="nav-link " href="paginaEditoriale.html#cash">Cashflow</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="schedaProdotto.html#come">Come accedere al servizio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="schedaProdotto.html#descrizione">Descrizione</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="schedaProdotto.html#offerto">Offerto da</a>
+                        <a class="nav-link " href="paginaEditoriale.html#en">Esportare è necessario</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- END MOBILE VERSION -->
-        <div class="row pt-4 text-center">
+        <!-- DESCRIZIONE PAGINA -->
+        <div class="row bg-bridge order-sm-1">
+            <div class="col-12 ">
+                <div class="row">
+                    <div class="col-sm textpage">
+                        <h4 style="font-weight: bold; color: darkslategray;">I benefici dell'Export</h4>
+                        <p>Perché dovresti decidere di esportare?<br>
+                            Le aziende che esportano registrano mediamente risultati più performanti in termini di
+                            crescita, competitività e redditività.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row intro color-bot order-sm-2">
+            <div class="col-sm" id="introd">
+                <h5>Introduzione</h5>
+                <p>Il mercato odierno, sempre più globalizzato e connesso, è pieno di opportunità di sviluppo per le
+                    imprese italiane. La digitalizzazione, le filiere globali, lo sviluppo di nuove tecnologie hanno
+                    eliminato molti ostacoli al commercio internazionale riducendo
+                    i costi di trasporto e favorendo uno scambio di informazioni e conoscenze mai visto prima.
+                    <br><br>La conseguenza principale di questo processo è quella di aver permesso anche alle <b>piccole
+                        e medie imprese di potersi avventurare oltre il solito mercato nazionale. </b>
+                </p>
+            </div>
+        </div>
+        <div class="order-sm-3">
+            <div class="row intro">
+                <div class="col-sm" id="pe">
+                    <h5>Perché esportare?</h5>
+                    <p>
+                        Come mai conviene decidere di aprirsi alla via dell'internazionalizzazione d'impresa?
+                        Questo processo di apertura verso l'esterno è necessario anche quando le tue performance
+                        nazionali
+                        sono buone?
+                        <br><br>La risposta è sì. le aziende che esportano registrano mediamente risultati più
+                        performanti
+                        in termini di <b>crescita, competitività e redditività.</b>
+                    </p>
+                </div>
+            </div>
+            <div class="row intro">
+                <div class="col-sm" id="crescita">
+                    <p><b>Crescita.</b></p>
+                    <p>Secondo dati CERVERD le <b>PMI più aperte ai mercati internazionali crescono a ritmi più
+                            elevati.</b>
+                        Mediamente 17% In più rispetto a quelle con grado di apertura minore. La spiegazione è piuttosto
+                        semplice: limitarsi al mercato nazionale riduce le possibilità di scoprire nuovi mercati
+                        profittevoli e nuovi sbocchi per i propri beni o servizi.
+                    </p>
+                </div>
+                <div class="col-sm text-center">
+                    <img src="logos/freccia.PNG" class="img-fluid mt-4" alt="logo">
+                </div>
+            </div>
+            <div class="row intro">
+                <div class="col-sm" id="comp">
+                    <p><b>Competitività.</b></p>
+                    <p>Le imprese che operano all'estero sono più competitive rispetto a quelle che circoscrivono la
+                        propria
+                        attività
+                        solamente nel mercato Interno. Le competenze maturate in mercati diversi rendono le Imprese più
+                        produttive e
+                        strutturate. Competenze che poi vengono sfruttate anche nel mercato di origine. 5e prendiamo
+                        come
+                        indicatore
+                        di riferimento il costo del lavoro per unità di prodotto ICLUP) nel 2018. il valore è molto più
+                        basso nelle
+                        Imprese che esportano {64.3% vs 717%. Ad un valore più basso del CLUP corrisponde una maggiore
+                        competitività).
+                    </p>
+                </div>
+            </div>
+            <div class="row intro">
+                <div class="col-sm" id="redd">
+                    <p><b>Redditività.</b></p>
+                    <p>Anche in termini di redditività le imprese a vocazione internazionale mostrano performance
+                        migliori.
+                        Sempre secondo i dati CERVERD, il ROE ante imposte di queste imprese si attesta mediamente
+                        intorno
+                        al 13,9% contro il 9,6% delle imprese che operano solo all'interno dei propri confini, con una
+                        differenza di oltre II 4% motivato principalmente da maggiori utili.
+                    </p>
+                </div>
+            </div>
+            <div class="row intro">
+                <div class="col-sm" id="cash">
+                    <p><b>Cashflow.</b></p>
+                    <p> L'alta produttività delle imprese aperte al mercato internazionale genera maggiori <b>flussi di
+                            cassa </b>(7,4% contro 6,4%).
+                        I benefici di flussi di cassa positivi per l'impresa sono molteplici: minori problemi legati al
+                        pagamento dei debiti,
+                        meno tensione in caso di imprevisti e possibilità di investire in nuove opportunità con più
+                        sicurezza.
+                    </p>
+                    <img src="logos/grafico.PNG" class="img-fluid pb-3" alt="logo">
+                    <p>
+                        Se gli indicatori di performance non sono sufficienti da soli a giustificare una scelta cosl
+                        importante,
+                        le ragioni per le quali aprirsi ad un nuovo mercato non sono finite qui. In questa sede,
+                        infatti, Si vuol dare una panoramica generale dei benefici e delle necessità di effettuare di
+                        esportare.
+                    </p>
+                </div>
+            </div>
+            <div class="row intro color-bot">
+                <div class="col-sm pt-5 pb-5" id="en">
+                    <h5>Esportare è necessario</h5>
+                    <p class="pt-5"><b>1.Stagnazione del mercato interno</b></p>
+                    <p>Stagnazione del mercato interno. Secondo i dati del Fondo Monetario Internazionale, la
+                        crescita del
+                        PIL in Italia si è attestata sul +0,3%. Meglio, ma non benissimo, l'area Euro che chiude
+                        comunque con
+                        un modesto +1.2%. Questa situazione è divenuta normale nelle economie avanzate. Con un
+                        mercato che cresce
+                        sempre di meno, la concorrenza diventa più accanita. Per evitare guerre dl prezzo e
+                        crescere,
+                        l'orientamento verso i Paesi emergenti che danno maggiori opportunità diventa una necessità.
+                    </p>
+                    <p class="pt-5"><b>2.Saturazione della capacità produttiva e allungamento del ciclo di vita del
+                            prodotto. </b></p>
+                    <p>La tua azienda potrebbe produrre di più di quanto II mercato interno possa assorbire? Allora
+                        questa è una buona
+                        ragione per esportare e trovare nuovi sbocchi di mercato peri tuoi prodotti/servizi. Tutti i
+                        prodotti/servizi
+                        passano prima o poi per una fase di maturità e poi di declino all'interno del loro ciclo di vita
+                        del prodotto.
+                        Dai una nuova giovinezza ai tuoi prodotti/servizi rilanciandoli all'interno di nuovi mercati
+                        dove
+                        non erano presenti.
+                    </p>
+                    <p class="pt-5"><b>3.Diversificazione del rischio Puntare su un solo mercato ti espone a molti
+                            rischi.</b></p>
+                    <p>Il clima economico attuale caratterizzato da tensioni e instabilità potrebbe provocare rialzo dei
+                        prezzi, tensioni politiche,
+                        recessioni. Se il mercato nel quale operi presenta uno dei problemi citati, aumenteranno i
+                        rischi di riduzione improvvisa del fatturato.
+                        Concentrarsi su diversi Paesi mitiga questo rischio riducendo le perdite.
+                    </p>
+                    <p class="pt-5"><b>4.Maggiore benessere del ceto medio nei paesi emergenti.</b></p>
+                    <p>Dopo una prima fase di sviluppo, il ceto medio dei paesi emergenti ha ormai modificato il proprio
+                        modello di acquisto. passando da una mera soddisfazione
+                        del bisogno alla ricerca di bisogni più sofisticati. I prodotti del Made in Italy soddisfano
+                        esigenze più specifiche, raffinate e qualitativamente superiore.
+                        Questa è l'occasione giusta per le Imprese Italiane di intercettare i nuovi bisogni all'interno
+                        di Paesi come Cina, Russia, Brasile, India ecc.
+                    </p>
+                    <p class="pt-5"><b>5.Rafforzare la Brand Awareness e la Brand Reputation. </b></p>
+                    <p>La presenza dei tuoi prodotti in diversi mercati avrà come inevitabile conseguenza che molte più
+                        persone verranno in contatto con il tuo brand, imparando a riconoscerlo e a fidelizzarsi.
+                        La presenza internazionale conferirà inoltre l'immagine di un marchio forte e stabile che
+                        avrà effetti positivi anche nel mercato di origine.
+                    </p>
+                    <p class="pt-5"><b>6.Tempi di dilazioni crediti.</b></p>
+                    <p>Uno studio del l'European Committee of Central Balance Sheet Data Office ha esaminato la durata
+                        media dei
+                        crediti e de debiti commerciali in otto paesi del continente Europeo nel periodo 2007-2017. Ciò
+                        che emerge
+                        non è incoraggiante per l'Italia che si posiziona all'ultimo posto per tempi di incasso e di
+                        pagamento
+                        più elevati (in media 75 giorni contro i 20 della Germania prima in classifica). I crediti
+                        maturati
+                        all'estero vengono riscossi prima e questo permette un cashflow più dinamico.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
             <div class="col-sm text-ceter">
-                <h5>Altri prodotti e servizi consigliati</h5>
+                <h4>Ti suggeriamo anche</h4>
+                <button onclick="myFunction()">Go Carousel!</button>
             </div>
         </div>
 
 
         <!--Carousel Wrapper-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <ol class="carousel-indicators d-none">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner p-5">
-                <div class="carousel-item active">
+                <div class="carousel-item px-5 active">
                     <!--Container delle 4 cards  -->
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-3" style="float:left">
+                            <div class="col-md-3" style="float:left">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
@@ -241,7 +330,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3 .d-none .d-sm-block" style="float:left">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
@@ -253,7 +342,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3 .d-none .d-sm-block" style="float:left">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
@@ -265,7 +354,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3 .d-none .d-sm-block" style="float:left">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
@@ -281,7 +370,7 @@
                     <!--Fine container delle 4 cards  -->
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item px-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3" style="float:left">
@@ -334,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item px-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3" style="float:left">
@@ -373,7 +462,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3 " style="float:left">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
@@ -388,14 +477,16 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="frecce d-none">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
 
         <!-- BLOCCO ASSISTENTE -->
@@ -406,13 +497,13 @@
                 <div class="row border text-block-bot text-center color-bot"
                     style="width: fit-content; border-radius: 20px;">
                     <div class="col-sm-auto">
-                        <h5 class="text-center">Hai bisogno di aiuto?</h5>
-                        <button type="button" class="btn btn-primary btn-primary-bot">Prova il nostro assistente
-                            virtuale</button>
-                    </div>
-                    <div class="col-sm text-center">
-                        <img src="https://static.thenounproject.com/png/1155091-200.png" style="width:70px;"
-                            class="pittogramma">
+                        <h4 class="text-center">
+                            Hai bisogno di aiuto?
+                        </h4>
+                        <button type="button" class="btn btn-success btn-primary-bot"
+                            style="width: -webkit-fill-available;">
+                            Contattaci
+                        </button>
                     </div>
                 </div>
             </div>
@@ -436,6 +527,7 @@
             </footer>
         </div>
     </div>
+
 </body>
 
 </html>
