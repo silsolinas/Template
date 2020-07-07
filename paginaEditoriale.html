@@ -9,32 +9,6 @@
         defer>
     <link rel="stylesheet" href="css/stylesheet.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
-        defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
-        defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
-        defer></script>
-
-    <script>
-        function myFunction() {
-            $("document").ready(function () {
-                let carouselid = document.querySelector('#carouselExampleIndicators');
-                carouselid.setAttribute('data-ride', 'carousel');
-                carouselid.setAttribute('data-interval', '1000');
-
-                //Mostro indicatori
-                carouselid.querySelector("ol").classList.remove("d-none");
-                carouselid.querySelector(".frecce").classList.remove("d-none");
-
-            });
-        }
-    </script>
-
     <title>Pagina Editoriale</title>
 </head>
 
@@ -301,24 +275,44 @@
         <div class="row text-center">
             <div class="col-sm text-ceter">
                 <h4>Ti suggeriamo anche</h4>
-                <button onclick="myFunction()">Go Carousel!</button>
+                <button id="goCarousel" class="btn btn-dark">Go Carousel!</button>
             </div>
         </div>
 
 
         <!--Carousel Wrapper-->
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <ol class="carousel-indicators d-none">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner p-5">
-                <div class="carousel-item px-5 active">
-                    <!--Container delle 4 cards  -->
-                    <div class="container">
+        <div class="disabledcarousel" id="disabledcarousel">
+            <div id="multi-item-example" class="carousel slide carousel-multi-item p-5">
+
+                <!--Controls-->
+                <div class="carouseloverprev" id="carouseloverprev"></div>
+                <a class="carousel-control-prev" href="#multi-item-example" role="button">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <div class="carouselovernext" id="carouselovernext"></div>
+                <a class="carousel-control-next" href="#multi-item-example" role="button">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
                         <div class="row">
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
@@ -330,7 +324,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3 .d-none .d-sm-block" style="float:left">
+                            <div class="col-md-3 clearfix d-none d-md-block">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
@@ -342,8 +336,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3 .d-none .d-sm-block" style="float:left">
+                            <div class="col-md-3 clearfix d-none d-md-block">
                                 <div class="card h-100">
+
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
                                         <h5 class="card-title text-center pb-5">T2M Train to Market</h5>
@@ -354,8 +349,67 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3 .d-none .d-sm-block" style="float:left">
+                            <div class="col-md-3 clearfix d-none d-md-block">
                                 <div class="card h-100">
+
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">TEM Digital Export Manager</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">Risk & Export Map</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card h-100">
+
+                                    <div class="card-body d-flex flex-column">
+                                        <h6 class="card-text text-center">Impara ad esportare</h6>
+                                        <h5 class="card-title text-center pb-5">T2M Train to Market</h5>
+                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
+                                            di
+                                            più</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 clearfix d-none d-md-block">
+                                <div class="card h-100">
+
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
                                         <h5 class="card-title text-center pb-5">TEM Digital Export Manager</h5>
@@ -367,13 +421,11 @@
                             </div>
                         </div>
                     </div>
-                    <!--Fine container delle 4 cards  -->
-                </div>
+                    <!--/.Third slide-->
+                    <div class="carousel-item">
 
-                <div class="carousel-item px-5">
-                    <div class="container">
                         <div class="row">
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
@@ -385,11 +437,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3 clearfix d-none d-md-block">
                                 <div class="card h-100">
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
-                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <h5 class="card-title text-center pb-5">Risk & Export Map</h5>
                                         <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
                                             di
                                             più</a>
@@ -397,11 +449,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3 clearfix d-none d-md-block">
                                 <div class="card h-100">
+
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
-                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <h5 class="card-title text-center pb-5">T2M Train to Market</h5>
                                         <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
                                             di
                                             più</a>
@@ -409,11 +462,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3" style="float:left">
+                            <div class="col-md-3 clearfix d-none d-md-block">
                                 <div class="card h-100">
+
                                     <div class="card-body d-flex flex-column">
                                         <h6 class="card-text text-center">Impara ad esportare</h6>
-                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
+                                        <h5 class="card-title text-center pb-5">TEM Digital Export Manager</h5>
                                         <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
                                             di
                                             più</a>
@@ -423,71 +477,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item px-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3" style="float:left">
-                                <div class="card h-100">
-                                    <div class="card-body d-flex flex-column">
-                                        <h6 class="card-text text-center">Impara ad esportare</h6>
-                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
-                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
-                                            di
-                                            più</a>
-                                    </div>
-                                </div>
-                            </div>
+                <!--/.Slides-->
 
-                            <div class="col-md-3" style="float:left">
-                                <div class="card h-100">
-                                    <div class="card-body d-flex flex-column">
-                                        <h6 class="card-text text-center">Impara ad esportare</h6>
-                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
-                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
-                                            di
-                                            più</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3" style="float:left">
-                                <div class="card h-100">
-                                    <div class="card-body d-flex flex-column">
-                                        <h6 class="card-text text-center">Impara ad esportare</h6>
-                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
-                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
-                                            di
-                                            più</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 " style="float:left">
-                                <div class="card h-100">
-                                    <div class="card-body d-flex flex-column">
-                                        <h6 class="card-text text-center">Impara ad esportare</h6>
-                                        <h5 class="card-title text-center pb-5">Servizi formativi gratuiti</h5>
-                                        <a href="#" class="btn btn-link border border-primary btn-center mt-auto">Scopri
-                                            di
-                                            più</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="frecce d-none">
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
+        <!--END CAROUSEL-->
 
         <!-- BLOCCO ASSISTENTE -->
         <div class="pt-3">
@@ -527,7 +521,73 @@
             </footer>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
+        defer></script>
 
+    <script>
+
+        $("document").ready(function () {
+            let flag = true;
+
+            $("#goCarousel").click(function () {
+
+                $('.carousel-control-prev').click(
+                    function () {
+                        $('.carousel').carousel('prev');
+                    }
+                );
+                $('.carousel-control-next').click(
+                    function () {
+                        $('.carousel').carousel('next');
+                    }
+                );
+                if (flag == true) {
+                    //Attivo il carousel
+                    $('#multi-item-example').carousel({
+                        ride: 'carousel',
+                        cycle: true,
+                        interval: 1000
+                      
+                    });
+
+                    //Rimuovo il div trasparente
+                    $("#disabledcarousel").removeClass("disabledcarousel");
+
+                    //Cambio colore
+                    $("#goCarousel").removeClass("btn-dark");
+                    $("#goCarousel").addClass("btn-danger");
+
+                    //Cambio scritta
+                    $("#goCarousel").html('Stop Carousel!');
+                    flag = false; //disattivo flag
+                }
+
+                else {
+                    $('#multi-item-example').carousel('pause');
+                    //Cambio colore bottone
+                    $("#goCarousel").addClass("btn-dark");
+                    $("#goCarousel").removeClass("btn-danger");
+
+                    //Cambio scritta al bottone
+                    $("#goCarousel").html('Go Carousel!');
+
+                    //Riaggiungo la classe per disabilitare
+                    $("#disabledcarousel").addClass("disabledcarousel");
+                    flag = true;
+                }
+
+            });
+        });
+
+    </script>
 </body>
 
 </html>
