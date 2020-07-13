@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+        defer>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contatti</title>
+
+</head>
+
+<body>
+    <div class="container px-0">
+        <!-- NAVBAR PRINCIPALE -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+
+            <a class="navbar-brand" href="#">
+                <img src="logos/esportaitalia.PNG" class="img-fluid" alt="logo">
+            </a>
+
+            <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" data-toggle="collapse"
+                data-target="#navbarSearch">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button class="navbar-toggler hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSearch">
+                <form class="navbar-form pl-2 search-center" id="navBarSearchForm">
+                    <div class="form-group">
+                        <input class="form-control " type="search" placeholder="Cosa stai cercando?"
+                            aria-label="Search">
+                    </div>
+                </form>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item border-right pl-2">
+                        <a class="text-white pr-2" href="#">Contatti</a>
+                    </li>
+                    <li class="nav-item pr-5">
+                        <a class="text-white pl-2" href="#">Novità</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- NAVBAR GRIGIA -->
+        <nav class="navbar navbar-expand-sm navbar-dark color-g1">
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-sm-auto mr-sm-auto pb-2">
+                    <li class="nav-item px-4">
+                        <a class="textlink" href="#">E-Desk</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="textlink" href="#">Preparati all'export</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="textlink" href="#">Porta il business all'estero</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="textlink" href="#">Amplifica e proteggi il tuo business</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--FORM CONTATTI-->
+        <div class="container pt-4" style="text-align: -webkit-center; zoom: 0.8;">
+            <div class="col-lg-10 col-sm-12">
+                <div class="titolo p-3">
+                    <h4 style="margin-bottom: 0;">Contatti</h4>
+                </div>
+                <div class="form-area">
+                    <form role="form" action="#" style="text-align: left" id="form-area" name="form-area">
+                        <br style="clear:both">
+                        <div class="row">
+
+                            <div class="col-sm-12 col-lg-6 form-group frm">
+                                <label for="name">Nome *</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder=""
+                                    maxlength="30">
+                                <span class="error">
+                                    <p id="name_error"></p>
+                                </span>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 form-group frm ">
+                                <label for="surname">Cognome *</label>
+                                <input type="text" class="form-control" id="surname" name="surname" placeholder=""
+                                    maxlength="40">
+                                <span class="error">
+                                    <p id="surname_error"></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group frm">
+                            <label for="email">Email *</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder=""
+                                maxlength="40">
+                            <span class="error">
+                                <p id="email_error"></p>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6 form-group frm">
+                                <label for="mobile">Telefono *</label>
+                                <input type="text" class="form-control" id="mobile" name="mobile" maxlength="15"
+                                    placeholder="">
+                                <span class="error">
+                                    <p id="mobile_error"></p>
+                                </span>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 form-group frm ml-auto">
+                                <label for="country">Regione *</label>
+                                <select class="custom-select" name="country" id="country">
+                                    <option value=""> - Seleziona una regione - </option>
+                                    <option value="abruzzo">Abruzzo</option>
+                                    <option value="basilicata">Basilicata</option>
+                                    <option value="calabria">Calabria</option>
+                                    <option value="campania">Campania</option>
+                                    <option value="emilia">Emilia-Romagna</option>
+                                    <option value="friuli">Friuli-Venezia Giulia</option>
+                                    <option value="lazio">Lazio</option>
+                                    <option value="liguria">Liguria</option>
+                                    <option value="lombardia">Lombardia</option>
+                                    <option value="marche">Marche</option>
+                                    <option value="molise">Molise</option>
+                                    <option value="piemonte">Piemonte</option>
+                                    <option value="puglia">Puglia</option>
+                                    <option value="sardegna">Sardegna</option>
+                                    <option value="sicilia">Sicilia</option>
+                                    <option value="toscana">Toscana</option>
+                                    <option value="trentino">Trentino-Alto Adige</option>
+                                    <option value="umbria">Umbria</option>
+                                    <option value="valle">Valle d'Aosta</option>
+                                    <option value="veneto">Veneto</option>
+                                </select>
+                                <span class="error">
+                                    <p id="country_error"></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group frm">
+                            <label for="request">Messaggio *</label>
+                            <textarea class="form-control" type="textarea" id="request" placeholder="Scrivi qui..."
+                                cols="60" rows="12"></textarea>
+                            <span class="error">
+                                <p id="request_error"></p>
+                            </span>
+                            <small>* Campi obbligatori<br></small>
+                        </div>
+                        <div class="row pl-2">
+                            <div class="col-sm-12 col-lg-8 col-md-8">
+                                <button type="submit" id="submit" name="submit"
+                                    class="btn btn-danger px-5">Conferma</button>
+
+                            </div>
+                            <div class="col-sm-12 col-lg-4 col-md-4">
+                                <button type="reset" id="reset" name="reset" class="btn px-4">Reset</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--END FORM-->
+
+        <!-- FOOTER -->
+        <footer class="page-footer font-small color-g1" style="margin-top: 3%;">
+            <div class="row">
+                <div class="col-sm text-left">
+                    <img src="logos/ita.png" class="img-fluid logo" alt="logo">
+                    <img src="logos/sacesimest.png" class="img-fluid logo" alt="logo">
+                </div>
+                <div class="text-right text-center">
+                    <ul class="navbar nav footertext">
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Domande frequenti</a></li>
+                        <li class="nav-item "><a class="pr-2 ablack" href="formContatti.html">Contatti</a></li>
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Mappa del sito</a></li>
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Cookies</a></li>
+                        <li class="nav-item "><a class="pr-2 ablack" href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+        defer></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
+        defer></script>
+    <script>
+        $("document").ready(function () {
+
+            //Valido il form JQuery aaaaa
+                $('form[id="form-area"]').validate({
+                    rules: {
+                        name: {
+                            required: true,
+                            minlength: 3
+                        },
+                        surname: 'required',
+                        email: {
+                            required: true,
+                            email: true,
+                        },
+                        mobile: {
+                            required: true,
+                            minlength: 9,
+                            digits: true
+                        },
+                        country: {
+                            required: true,
+                        },
+                        request: {
+                            required:true,
+                            minlength: 20
+                        }
+                    },
+                    messages: {
+                        name: 'Inserisci nome.',
+                        surname: 'Inserisci cognome.',
+                        email: 'Inserisci email.',
+                        mobile: {
+                            required: 'Inserisci un numero di telefono valido.',
+                            minlength: 'Inserisci almeno 9 cifre.',
+                            digits: 'Inserisci solo cifre'
+                        },
+                        country: 'Seleziona una regione valida.',
+                        request: {
+                            required: 'Scrivi un messaggio',
+                            minlength: 'Scrivi almeno 20 caratteri'
+                        }
+                    },
+
+                    submitHandler: function(form) {
+                        form.submit();
+                    }
+                });
+
+            //Valido con Javascript
+            // document.getElementById("form-area").onsubmit = function () {
+            //     let name = document.forms["form-area"]["name"].value;
+            //     let surname = document.forms["form-area"]["surname"].value;
+            //     let email = document.forms["form-area"]["email"].value;
+            //     let mobile = document.forms["form-area"]["mobile"].value;
+            //     let country = document.forms["form-area"]["country"].value;
+            //     let request = document.forms["form-area"]["request"].value;
+
+            //     let submit = true;
+
+            //     if (name == "" || name == null) {
+            //         idName = $('#name');
+            //         idError = $('#name_error');
+
+            //         nameError = "Inserisci il tuo nome.";
+            //         document.getElementById("name_error").innerHTML = nameError;
+
+            //         //Funzione per aggiungere il bordo rosso e rimuovere il bordo e testo di errore al click
+            //         removeError(idName, idError);
+            //         submit = false;
+            //     }
+            //     if (surname == "" || surname == null) {
+            //         idSurname = $('#surname');
+            //         idError = $('#surname_error');
+
+            //         surnameError = "Inserisci il tuo cognome.";
+            //         document.getElementById("surname_error").innerHTML = surnameError;
+
+            //         removeError(idSurname, idError);
+
+            //         submit = false;
+            //     }
+            //     if (email == "" || email == null) {
+            //         idEmail = $('#email');
+            //         idError = $('#email_error')
+
+            //         emailError = "Inserisci la tua mail.";
+            //         document.getElementById("email_error").innerHTML = emailError;
+
+            //         removeError(idEmail, idError);
+
+            //         submit = false;
+            //     }
+
+            //     if (mobile == "" || mobile == null ) {
+            //         idMobile = $('#mobile');
+            //         idError = $('#mobile_error')
+            //         mobileError = "Inserisci il tuo telefono.";
+            //         document.getElementById("mobile_error").innerHTML = mobileError;
+
+            //         removeError(idMobile, idError);
+            //         submit = false;
+            //     }
+            //     if(mobile != "" && isNan(mobile)){
+            //             mobileError = "Inserire solo cifre.";
+            //             document.getElementById("mobile_error").innerHTML = mobileError;
+            //             submit = false;
+            //     }
+            //     if (request == "" || request == null) {
+            //         console.log(request);
+            //         idRequest = $('#request');
+            //         idError = $('#request_error')
+
+            //         requestError = "Inserisci il messaggio.";
+            //         document.getElementById("request_error").innerHTML = requestError;
+
+            //         removeError(idRequest, idError);
+            //         submit = false;
+            //     }
+            //     if (country == "" || country == null) {
+            //         idCountry = $('#country');
+            //         idError = $('#country_error')
+
+            //         countryError = "Seleziona una regione valida.";
+            //         document.getElementById("country_error").innerHTML = countryError;
+
+            //         removeError(idCountry, idError);
+            //         submit = false;
+            //     }
+            //     return submit;
+
+            // }
+
+            // let removeError = (id1, id2) => {
+            //     id1.css("border", "1px solid red");
+
+            //     id1.click(function () {
+            //         id1.css("border", "none");
+            //         //console.log(id1);
+            //         id2.html(" ");
+            //     })
+
+            // }
+        });
+
+
+    </script>
+</body>
+
+</html>
