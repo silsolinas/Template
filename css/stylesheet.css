@@ -1,102 +1,118 @@
-body{
+body {
     font-family: Arial;
 }
-p{
-    font-size:larger;
+
+p {
+    font-size: larger;
 }
-h5, h2{
-    font-size:x-large;
+
+h5,
+h2 {
+    font-size: x-large;
     font-weight: bold;
 }
 
-.navbar-custom { 
-    background-color: rgb(214, 21, 36); 
-} 
-.color-g1{
+.navbar-custom {
+    background-color: rgb(214, 21, 36);
+}
+
+.color-g1 {
     background-color: rgb(215, 215, 215);
-   
 }
-.color-g2{
+
+.color-g2 {
     background-color: rgb(170, 170, 170);
-    padding:2%
+    padding: 2%
 }
-.color-bot{
+
+.color-bot {
     background-color: rgb(242, 242, 242);
 }
-.textlink{
+
+.textlink {
     font-weight: bold;
-    color:rgb(214, 21, 36);
+    color: rgb(214, 21, 36);
 }
-.basictext{
-    font-size:71.7%;
-    color:white;
-}
-.awhite{
-    color:white;
-    text-decoration: underline;
 
+.basictext {
+    font-size: 71.7%;
+    color: white;
 }
-.ablack{
-    color:black;
+
+.awhite {
+    color: white;
     text-decoration: underline;
 }
-.footertext{
-    font-size:70%;
+
+.ablack {
+    color: black;
+    text-decoration: underline;
 }
 
-.container-fluid{
-    padding:0;
+.footertext {
+    font-size: 70%;
+}
 
+.container-fluid {
+    padding: 0;
 }
-.navbar{
-    padding:0;
-    
+
+.navbar {
+    padding: 0;
 }
-.navbar-brand{
-    padding:0;
-    margin:0;
-    float:left;
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+    float: left;
     padding-right: 20%;
 }
 
-.form-group{
-    margin:0;
+.form-group {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
-#navBarSearchForm{
-    width:80%;
+
+#navBarSearchForm {
+    width: 80%;
     margin: 0;
 }
-.nav-item{
 
-    margin-top:2%;
+.nav-item {
+    margin-top: 2%;
     /* padding:2%; */
 }
-.navbar-brand{
-    padding:0;
-}
-.button{
-    padding-right:2%;
-}
-.text-center{
 
+.navbar-brand {
+    padding: 0;
+}
+
+.button {
+    padding-right: 2%;
+}
+
+.text-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search-center{
+
+.search-center {
     justify-content: center;
     align-items: center;
 }
-.row{
-    margin-right:0;
+
+.row {
+    margin-right: 0;
 }
 
-.bg-image{
+.bg-image {
     background-image: url("../backgroundImages/museum.png");
     background-size: cover;
 }
 
-.bg-image2{
+.bg-image2 {
     background-image: url("../backgroundImages/city.png");
     background-size: cover;
 }
@@ -105,59 +121,69 @@ h5, h2{
     background-color: white;
     color: black;
     padding: 3%;
-  }
-.text-block-bot{
+}
+
+.text-block-bot {
     color: black;
     padding: 1%;
 }
-.imgsize{
+
+.imgsize {
     width: 70%;
     margin-top: 50%;
-    margin-left:65%;
+    margin-left: 65%;
     margin-bottom: 40%;
-  }
+}
 
-.textbox{
+.textbox {
     width: 60%;
     height: 30%;
     margin: 20%;
-    border-radius:5px;
+    border-radius: 5px;
     margin-bottom: 15%;
 }
-.row{
-    margin:0;
+
+.row {
+    margin: 0;
 }
 
-@media (max-width: 575.98px){
-    .pittogramma{
-        display:none;
+@media (max-width: 575.98px) {
+    .pittogramma {
+        display: none;
     }
 }
 
 
 /*Pagina prodotto*/
 
+
 /*Lista prodotti*/
-.breadcrumb{
+
+.breadcrumb {
     background-color: white;
 }
 
-.btn-center{
+.btn-center {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.container-padding{
+
+.container-padding {
     padding: 0% 5% 5% 5%;
 }
-hr{
+
+hr {
     margin-top: 0;
 }
-.btn-primary-bot{
-    margin-top:3%;
+
+.btn-primary-bot {
+    margin-top: 3%;
     padding: 3%;
 }
+
+
 /*Pagina prodotto*/
 
 .carousel-control-next,
@@ -170,16 +196,20 @@ hr{
     height: 10px;
     border-radius: 100%;
     background-color: #404040;
-  }
-.logo{
+}
+
+.logo {
     height: 50px;
 }
+
+
 /*SCHEDA PRODOTTO*/
-.box-index{
-    -webkit-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
-    box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
-    width: 200px; 
+
+.box-index {
+    -webkit-box-shadow: 13px 14px 20px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 14px 20px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 13px 14px 20px -1px rgba(0, 0, 0, 0.75);
+    width: 200px;
     margin-left: 2%;
     position: absolute;
     font-size: smaller;
@@ -188,94 +218,229 @@ hr{
     font-weight: bold;
     text-decoration: underline;
 }
-.box-index2{
+
+.box-index2 {
     font-size: smaller;
     background-color: white;
     text-align-last: end;
     font-weight: bold;
     text-decoration: underline;
-    display:none;
+    display: none;
 }
-.scheda-padd{
+
+.scheda-padd {
     padding: 0% 20% 0 20%
 }
 
-@media (max-width: 992px){
-    .scheda-padd{
-        padding-right:0;
-        padding-left:30%;
+@media (max-width: 992px) {
+    .scheda-padd {
+        padding-right: 0;
+        padding-left: 30%;
     }
-    .box-index2{
-        display:none;
+    .box-index2 {
+        display: none;
     }
 }
-@media (max-width: 767px){
-    .scheda-padd{
-        padding:0;
 
+@media (max-width: 767px) {
+    .scheda-padd {
+        padding: 0;
     }
-    .box-index{
-        display:none;
+    .box-index {
+        display: none;
     }
-    .box-index2{
-        display:contents;
+    .box-index2 {
+        display: contents;
     }
 }
+
 
 /*PAGINA EDITORIALE*/
-.bg-bridge{
+
+.bg-bridge {
     background-image: url("https://www.hdwallpapers.in/download/akashi_kaikyo_bridge_japan-wide.jpg");
     background-size: cover;
 }
-.textpage{
+
+.textpage {
     float: right;
     padding: 3% 1% 1% 7%;
     margin: 5% 5% 5% 23%;
     background: rgba(245, 244, 244, 0.8);
     color: darkslategray;
 }
-.intro{
+
+.intro {
     padding: 1% 5% 0% 23%;
     margin: 5% 0% 5% 0%;
     color: darkslategray;
 }
-.box-index-scheda{
-    -webkit-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
-    box-shadow: 13px 14px 20px -1px rgba(0,0,0,0.75);
+
+.box-index-scheda {
+    -webkit-box-shadow: 13px 14px 20px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 14px 20px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 13px 14px 20px -1px rgba(0, 0, 0, 0.75);
     width: 200px;
     position: absolute;
     background-color: white;
     font-weight: bold;
     text-decoration: underline;
     margin-top: 15%;
-    margin-left:2%
+    margin-left: 2%
 }
-ol{
-    margin-block-start:0px;
+
+ol {
+    margin-block-start: 0px;
     padding-inline-start: 3%;
 }
-@media(max-width: 991px){
-    .box-index-scheda{
+
+@media(max-width: 991px) {
+    .box-index-scheda {
         display: none;
     }
-    .intro{
-        padding:1% 5% 0% 5%;
+    .intro {
+        padding: 1% 5% 0% 5%;
     }
 }
 
+
 /*DIV OVER ANOTHER DIV*/
-.carousel-control-prev{
+
+.carousel-control-prev {
     padding-right: 10%;
 }
-.carousel-control-next{
-    padding-left:10%;
+
+.carousel-control-next {
+    padding-left: 10%;
 }
-.disabledcarousel{
+
+.disabledcarousel {
     pointer-events: none;
     background-color: grey;
     background: transparent;
     opacity: 0.4;
-
 }
+
+
 /*END*/
+
+
+/*FORM*/
+
+.form-area {
+    background-color: #dfdbdb96;
+    padding: 3% 10% 3% 10%;
+    border: 1px solid GREY;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.frm {
+    padding-bottom: 5%;
+    padding-left: 3%;
+}
+
+label {
+    margin: 0;
+    font-weight: 600;
+    padding-left: 0.5%;
+    color: rgb(56, 56, 56);
+}
+
+#reset {
+    background-color: dimgrey;
+    color: white;
+}
+
+#reset,
+#submit {
+    width: -webkit-fill-available;
+    font-size: larger;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.titolo {
+    margin-bottom: 0;
+    background-color: rgba(214, 21, 37, 0.747);
+    color: white;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-weight: bolder;
+}
+
+
+/* Style the form - display items horizontally */
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+
+/* Add some margins for each label */
+
+.form-inline label {
+    margin: 5px 10px 5px 0;
+}
+
+
+/* Style the input fields */
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+
+/* Style the submit button */
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+@media (max-width: 768px) {
+    #reset {
+        margin-top: 4%;
+    }
+}
+
+
+/*ERRORS*/
+
+.error {
+    color: red;
+}
+
+label.error {
+    display: inline;
+}
+
+input.error {
+    border-color: Red;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+/*END FORM*/
