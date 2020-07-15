@@ -138,7 +138,7 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <div class="pull-left">Album 1</div>
+                                                <div class="pull-left text-white">Album 1</div>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
@@ -181,7 +181,7 @@
 
                                             </div>
                                             <div class="modal-footer">
-                                                <p class="my-0"><small>descrizione</small></p>
+                                                <p class="my-0"><small><b>descrizione</b></small></p>
                                                 <!--end modal-footer-->
                                             </div>
                                             <!--end modal-content-->
@@ -208,7 +208,7 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <div class="pull-left">Album 2</div>
+                                                <div class="pull-left text-white">Album 2</div>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
@@ -251,7 +251,7 @@
 
                                             </div>
                                             <div class="modal-footer">
-                                                <p class="my-0"><small>descrizione</small></p>
+                                                <p class="my-0 "><small><b>descrizione</b></small></p>
                                                 <!--end modal-footer-->
                                             </div>
                                             <!--end modal-content-->
@@ -278,7 +278,7 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <div class="pull-left">Album 3</div>
+                                                <div class="pull-left text-white">Album 3</div>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
@@ -321,7 +321,7 @@
 
                                             </div>
                                             <div class="modal-footer">
-                                                <p class="my-0"><small>descrizione</small></p>
+                                                <p class="my-0"><small><b>descrizione</b></small></p>
                                                 <!--end modal-footer-->
                                             </div>
                                             <!--end modal-content-->
@@ -347,7 +347,7 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <div class="pull-left">Album 4</div>
+                                                <div class="pull-left text-white">Album 4</div>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
@@ -390,7 +390,7 @@
 
                                             </div>
                                             <div class="modal-footer">
-                                                <p class="my-0"><small>descrizione</small></p>
+                                                <p class="my-0"><small><b>descrizione</b></small></p>
                                                 <!--end modal-footer-->
                                             </div>
                                             <!--end modal-content-->
@@ -425,7 +425,7 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <div class="pull-left">Album 5</div>
+                                                <div class="pull-left text-white">Album 5</div>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
@@ -468,7 +468,7 @@
 
                                             </div>
                                             <div class="modal-footer">
-                                                <p class="my-0"><small>descrizione</small></p>
+                                                <p class="my-0"><small><b>descrizione</b></small></p>
                                                 <!--end modal-footer-->
                                             </div>
                                             <!--end modal-content-->
@@ -575,16 +575,21 @@
 
     <script>
 
-        $("document").ready(function () {
+        $(document).ready(function () {
 
             /*funzione che si occupa di chiudere e nascondere la modal quando si clicca al di fuori
             di essa, rimuovendo la classe carousel-item e active dagli elementi del carousel interno
             per non aver conflitti con il carousel principale*/
             let chiudiModal = () => {
 
-                $(document).mouseenter(function () {
-                    $('.fade').modal('hide'); //chiude la modal
-                    $('.fade').hide();
+                $(document).mousedown(function () {
+                    //cliccando sulla modal non ha effetto la chiusura
+                    $('.modal').mousedown(function (e) {
+                        e.stopPropagation();
+                    });
+
+                    $('.modal').modal('hide'); //chiude la modal
+                    $('.modal').hide();
                     $('.modalitem').removeClass("carousel-item");
                     $('.modalitem').removeClass("active");
                 }
@@ -597,12 +602,12 @@
             let Modal = (idImg, idModal, idCarousel) => {
 
                 $('#multi-item-example').carousel('pause'); //fermo il carousel principale
-                
+
                 idImg.click(function () {
                     idModal.modal('toggle');
                     $('.modalitem').addClass("carousel-item");
                     idCarousel.find('.modalitem').first().addClass('active');
-                    
+
                     chiudiModal();
                 });
 
@@ -610,53 +615,15 @@
 
             //chiamo la funzione Modal ciclando sul numero di immagini del carousel principale
             let numImg = $('.carouselImage').length;
-           
-            for (let i=1; i<=numImg; i++) {
+
+            for (let i = 1; i <= numImg; i++) {
 
                 let img = $(`#img${i}`);
                 let modal = $(`#Modal${i}`);
                 let carousel = $(`#carouselGallery${i}`);
 
-                Modal(img,modal,carousel);
-
+                Modal(img, modal, carousel);
             }
-            //aprire modal al click immagine corrispondente
-            // Modal($('#img1'), $('#Modal1'), $('#carouselGallery1'));
-            // Modal($('#img2'), $('#Modal2'), $('#carouselGallery2'));
-            // Modal($('#img3'), $('#Modal3'), $('#carouselGallery3'));
-            // Modal($('#img4'), $('#Modal4'), $('#carouselGallery4'));
-            // Modal($('#img5'), $('#Modal5'), $('#carouselGallery5'));
-
-            // $('#img1').click(function () {
-            //     $('#Modal1').modal('toggle');
-            //     $('#carouselGallery').find('.modalitem').first().addClass('active');
-            //     //aggiugere classe carousel-item alle foto quando si apre la modal
-            //     modalActive();
-            // });
-
-            // $('#img2').click(function () {
-            //     $('#Modal2').modal('toggle');
-            //     $('#carouselGallery2').find('.modalitem').first().addClass('active');
-            //     modalActive();
-            // });
-
-            // $('#img3').click(function () {
-            //     $('#Modal3').modal('toggle');
-            //     $('#carouselGallery3').find('.modalitem').first().addClass('active');
-            //     modalActive();
-            // });
-
-            // $('#img4').click(function () {
-            //     $('#Modal4').modal('toggle');
-            //     $('#carouselGallery4').find('.modalitem').first().addClass('active');
-            //     modalActive();
-            // });
-
-            // $('#img5').click(function () {
-            //     $('#Modal5').modal('toggle');
-            //     $('#carouselGallery5').find('.modalitem').first().addClass('active');
-            //     modalActive();
-            // });
 
             /*attivazione Carousel principale*/
             let flag = true;

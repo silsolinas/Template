@@ -280,21 +280,18 @@ ol{
 }
 /*END*/
 
-.modalFooter {
-   width: 80%;
-   background-color: rgb(242, 242, 242);
-   padding-top: 0;
-   padding-bottom: 0;
-
+/* css per elementi modal*/
+.modal-content {
+    background: rgb(170, 170, 170);
+    border:none; 
 }
 
-.modal-content {
-    background: rgb(242, 242, 242);
-    /* border:none; */
+.modal-header {
+    background-color: rgb(214, 21, 36);
 }
 
 .albumInfo {
-    z-index: 2;
+    z-index: 2; 
     position: relative; 
     margin-top: -65%;
     margin-left: -5%;
@@ -310,7 +307,7 @@ ol{
  }
 
  .carouselImage {
-     z-index: 1;
+     z-index: 1; /*per sovrapporsi allo spazio occupato dalla freccia del carousel*/
      position: relative;
      height: 230px;
  }
@@ -336,8 +333,4 @@ ol{
     .marginModify {
         margin-top: 34%;
     }
-   }
-
-   .mySlides {
-       display: none;
    }
