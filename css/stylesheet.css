@@ -335,3 +335,28 @@ ol{
         margin-top: 34%;
     }
    }
+/*mappaGoogle.html*/
+.map-container{
+    padding: 5% 10% 5% 10%;
+    background-color: darkgrey;
+}
+.sede{
+    background-color:white;
+    padding: 5% 4% 5% 5%;
+}
+.sede > p {
+    font-size: 90%;
+}
+#map{
+    width:100%;
+}
+@media(max-width: 765px){
+    #map{
+        width:100%;
+        height:300px;
+    }
+    .sede > a{
+        width: inherit;
+    }
+}
+/*Fine mappaGoogle.html*/
