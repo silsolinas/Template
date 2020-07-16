@@ -6,8 +6,7 @@ p {
     font-size: larger;
 }
 
-h5,
-h2 {
+h5, h2 {
     font-size: x-large;
     font-weight: bold;
 }
@@ -153,9 +152,7 @@ h2 {
     }
 }
 
-
 /*Pagina prodotto*/
-
 
 /*Lista prodotti*/
 
@@ -183,11 +180,9 @@ hr {
     padding: 3%;
 }
 
-
 /*Pagina prodotto*/
 
-.carousel-control-next,
-.carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
     filter: invert(100%);
 }
 
@@ -201,7 +196,6 @@ hr {
 .logo {
     height: 50px;
 }
-
 
 /*SCHEDA PRODOTTO*/
 
@@ -254,7 +248,6 @@ hr {
     }
 }
 
-
 /*PAGINA EDITORIALE*/
 
 .bg-bridge {
@@ -303,7 +296,6 @@ ol {
     }
 }
 
-
 /*DIV OVER ANOTHER DIV*/
 
 .carousel-control-prev {
@@ -321,9 +313,7 @@ ol {
     opacity: 0.4;
 }
 
-
 /*END*/
-
 
 /*FORM*/
 
@@ -353,8 +343,7 @@ label {
     color: white;
 }
 
-#reset,
-#submit {
+#reset, #submit {
     width: -webkit-fill-available;
     font-size: larger;
 }
@@ -378,7 +367,6 @@ label {
     font-weight: bolder;
 }
 
-
 /* Style the form - display items horizontally */
 
 .form-inline {
@@ -387,13 +375,11 @@ label {
     align-items: center;
 }
 
-
 /* Add some margins for each label */
 
 .form-inline label {
     margin: 5px 10px 5px 0;
 }
-
 
 /* Style the input fields */
 
@@ -404,7 +390,6 @@ label {
     background-color: #fff;
     border: 1px solid #ddd;
 }
-
 
 /* Style the submit button */
 
@@ -425,7 +410,6 @@ label {
     }
 }
 
-
 /*ERRORS*/
 
 .error {
@@ -442,5 +426,97 @@ input.error {
     border-width: 1px;
 }
 
-
 /*END FORM*/
+
+/*END*/
+
+/* css per elementi modal*/
+
+.modal-content {
+    background: rgb(215, 215, 215);
+    border: none;
+}
+
+.modal-header {
+    background-color: rgb(214, 21, 36);
+}
+
+.albumInfo {
+    z-index: 2;
+    position: relative;
+    margin-top: -65%;
+    margin-left: -5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+    background-color: rgb(242, 242, 242);
+    opacity: 85%;
+    pointer-events: none;
+}
+
+@media (max-width:1090px) {
+    .carouselImage {
+        height: 150px;
+    }
+}
+
+.carouselImage {
+    z-index: 1;
+    /*per sovrapporsi allo spazio occupato dalla freccia del carousel*/
+    position: relative;
+    height: 230px;
+}
+
+/*sistemare parte inferiore della pagina web in fondo alle varie risoluzioni*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .marginModify {
+        margin-top: 44%;
+    }
+    .carouselImage {
+        height: 130px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .marginModify {
+        margin-top: 59%;
+    }
+}
+
+@media (min-width: 315px) and (max-width: 414px) {
+    .marginModify {
+        margin-top: 34%;
+    }
+}
+
+/*mappaGoogle.html*/
+
+.map-container {
+    padding: 5% 10% 5% 10%;
+    background-color: darkgrey;
+}
+
+.sede {
+    background-color: white;
+    padding: 5% 4% 5% 5%;
+}
+
+.sede>p {
+    font-size: 90%;
+}
+
+#map {
+    width: 100%;
+}
+
+@media(max-width: 765px) {
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+    .sede>a {
+        width: inherit;
+    }
+}
+
+/*Fine mappaGoogle.html*/
