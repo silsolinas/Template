@@ -576,7 +576,6 @@
     <script>
 
         $(document).ready(function () {
-
             /*funzione che si occupa di chiudere e nascondere la modal quando si clicca al di fuori
             di essa, rimuovendo la classe carousel-item e active dagli elementi del carousel interno
             per non aver conflitti con il carousel principale*/
@@ -588,6 +587,7 @@
                         e.stopPropagation();
                     });
 
+                    $('#multi-item-example').carousel('cycle'); //riattiva carousel principale
                     $('.modal').modal('hide'); //chiude la modal
                     $('.modal').hide();
                     $('.modalitem').removeClass("carousel-item");
@@ -601,10 +601,14 @@
                 Infine chiama la funzione chiudiModal() quando si clicca al di fuori della modal */
             let Modal = (idImg, idModal, idCarousel) => {
 
-                $('#multi-item-example').carousel('pause'); //fermo il carousel principale
-
                 idImg.click(function () {
+                    
                     idModal.modal('toggle');
+
+                    $(document).mouseleave(function () {
+                        $('#multi-item-example').carousel('pause');
+                    }) //fermare carousel principale se il mouse lascia la pagina
+
                     $('.modalitem').addClass("carousel-item");
                     idCarousel.find('.modalitem').first().addClass('active');
 

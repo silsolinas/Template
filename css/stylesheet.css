@@ -282,7 +282,7 @@ ol{
 
 /* css per elementi modal*/
 .modal-content {
-    background: rgb(170, 170, 170);
+    background: rgb(215, 215, 215);
     border:none; 
 }
 
@@ -299,6 +299,7 @@ ol{
     margin-bottom: 15%;
     background-color:rgb(242, 242, 242);
     opacity: 85%;
+    pointer-events: none;
 }
  @media (max-width:1090px){
     .carouselImage {
