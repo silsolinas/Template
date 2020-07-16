@@ -280,6 +280,61 @@ ol{
 }
 /*END*/
 
+/* css per elementi modal*/
+.modal-content {
+    background: rgb(215, 215, 215);
+    border:none; 
+}
+
+.modal-header {
+    background-color: rgb(214, 21, 36);
+}
+
+.albumInfo {
+    z-index: 2; 
+    position: relative; 
+    margin-top: -65%;
+    margin-left: -5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+    background-color:rgb(242, 242, 242);
+    opacity: 85%;
+    pointer-events: none;
+}
+ @media (max-width:1090px){
+    .carouselImage {
+        height: 150px;
+    }
+ }
+
+ .carouselImage {
+     z-index: 1; /*per sovrapporsi allo spazio occupato dalla freccia del carousel*/
+     position: relative;
+     height: 230px;
+ }
+ 
+ /*sistemare parte inferiore della pagina web in fondo alle varie risoluzioni*/
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    .marginModify {
+        margin-top: 44%;
+    }
+
+    .carouselImage {
+        height: 130px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .marginModify {
+        margin-top: 59%;
+    }
+   }
+
+   @media (min-width: 315px) and (max-width: 414px) { 
+    .marginModify {
+        margin-top: 34%;
+    }
+   }
 /*mappaGoogle.html*/
 .map-container{
     padding: 5% 10% 5% 10%;
